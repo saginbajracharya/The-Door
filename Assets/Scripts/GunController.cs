@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class GunController : MonoBehaviour
 {
-    public Rigidbody projectile;
-    public Transform  barrelEnd;
-    public float BulletSpeed=800f;
-    public AudioSource gunShotAudio;
-    public float canfire= 0.5f;
-    public float firerate = 1f;
+    public Rigidbody projectile; //bullet
+    public Transform  barrelEnd; //bulletSpawner
+    public float BulletSpeed=800f; //BulletSpeed
+    public AudioSource gunShotAudio; //gunShotAudio
+    public float canfire= 0.5f;  //time if bullet can be spawn or not 
+    public float firerate = 1f; // rate of spawn bullet per sec
 
     void Start()
     {
